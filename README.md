@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# React Ecommerce Template
+## Run Locally
+### 1. Install Dependencies
+```sh
+$ npm install
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 2. Create a new firebase project
+Login to your google account and create a new firebase project [here](https://console.firebase.google.com/u/0/)
 
-## Available Scripts
+Create an `env` file - Set filename`.env.prod` file for production and `.env.dev`for development and save it in the root of your project folder
+and add the following configuration details. You can either use the same configuration details for both development and production but it's best to make separate projects. It can be found on your firebase project settings.
 
-In the project directory, you can run:
+```
+// SAMPLE CONFIG .env.dev, you should put the actual config details found on your project settings
 
-### `npm start`
+FIREBASE_API_KEY=AIzaKJgkjhSdfSgkjhdkKJdkjowf
+FIREBASE_AUTH_DOMAIN=yourauthdomin.firebaseapp.com
+FIREBASE_DB_URL=https://yourdburl.firebaseio.com
+FIREBASE_PROJECT_ID=yourproject-id
+FIREBASE_STORAGE_BUCKET=yourstoragebucket.appspot.com
+FIREBASE_MSG_SENDER_ID=43597918523958
+FIREBASE_APP_ID=234598789798798fg3-034
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+``` 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After setting up necessary configuration,
+create a **Database** and choose **Cloud Firestore** and start in test mode
 
-### `npm test`
+### 3. Run development server
+```sh 
+$ npm run dev-server
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Build the project
+```sh
+$ npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to add products or perform CRUD operations for Admin
+1. Navigate to your site to `/signup`
+2. Create an account for yourself
+3. Go to your firestore collection `users collection` and edit the account you've just created. Change the role from `USER` to `ADMIN`.
+4. Reload or sigin again to see the changes. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Firebase Admin to be integrated soon**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Admin CRUD operations
+* Firebase authentication
+* Firebase auth provider authentication
+* Account creation and edit
