@@ -1,4 +1,22 @@
 # React Ecommerce Template
+
+## An modern ecommerce web app built with react, redux and firebase. Feel free to use my code.
+
+## :link: Live Demo
+
+Here's a [live demo](react-ecommerce-d720b.web.app/)
+
+<p align="center"> 
+  <kbd>
+        <img src="https://res.cloudinary.com/sam13/image/upload/v1614069448/img1_oas9zh.png"></img>
+  </kbd>
+   <kbd>
+        <img src="https://res.cloudinary.com/sam13/image/upload/v1614069448/img2_w1mosc.pngg"></img>
+  </kbd>
+   <kbd>
+        <img src="https://res.cloudinary.com/sam13/image/upload/v1614069447/img3_z3afb2.png"></img>
+  </kbd>
+</p>
 ## Run Locally
 ### 1. Install Dependencies
 ```sh
@@ -6,6 +24,7 @@ $ npm install
 ```
 
 ### 2. Create a new firebase project
+
 Login to your google account and create a new firebase project [here](https://console.firebase.google.com/u/0/)
 
 Create an `env` file - Set filename`.env.prod` file for production and `.env.dev`for development and save it in the root of your project folder
@@ -22,34 +41,37 @@ FIREBASE_STORAGE_BUCKET=yourstoragebucket.appspot.com
 FIREBASE_MSG_SENDER_ID=43597918523958
 FIREBASE_APP_ID=234598789798798fg3-034
 
-``` 
+```
 
 After setting up necessary configuration,
 create a **Database** and choose **Cloud Firestore** and start in test mode
 
 ### 3. Run development server
-```sh 
+
+```sh
 $ npm run dev-server
 ```
 
 ---
 
 ## Build the project
+
 ```sh
 $ npm run build
 ```
 
 ## How to add products or perform CRUD operations for Admin
+
 1. Navigate to your site to `/signup`
 2. Create an account for yourself
 3. Go to your firestore collection `users collection` and edit the account you've just created. Change the role from `USER` to `ADMIN`.
-4. Reload or sigin again to see the changes. 
+4. Reload or sigin again to see the changes.
 
 **Firebase Admin to be integrated soon**
 
 ## Features
 
-* Admin CRUD operations
-* Firebase authentication
-* Firebase auth provider authentication
-* Account creation and edit
+- Admin CRUD operations
+- Firebase authentication
+- Firebase auth provider authentication
+- Account creation and edit

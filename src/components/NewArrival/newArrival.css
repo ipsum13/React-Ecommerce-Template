@@ -1,0 +1,119 @@
+.newArrival-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.newArrivals h1 {
+  color: #20263f;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  display: block;
+}
+.newArrivals {
+  display: table;
+  margin: 0 auto;
+  width: 80vw;
+  margin-bottom: 30px;
+  animation-name: titleIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  flex: 20%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.newArrival > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #20263f;
+}
+.newArrival > div > img {
+  object-fit: cover;
+}
+.newArrival {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  margin-top: 40px;
+  width: 80vw;
+}
+
+img {
+  border-radius: 10px;
+  padding: 5px;
+  width: 18vw;
+  height: 100vh;
+}
+.description {
+  display: none;
+  position: absolute;
+}
+
+.newArrival > div:hover {
+  transform: scale(1.1);
+}
+.newArrival > div:hover .description {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.newArrival > div:hover img {
+  opacity: 0.7;
+}
+
+.button {
+  background: #000;
+  padding: 1.6rem;
+  border: 1px solid #101010;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 10vw;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: lighten(#101010, 10%);
+  border: 1px solid lighten(#101010, 10%);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .newArrival-section {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border-radius: 10px;
+    padding: 5px;
+    width: 60vw;
+    height: 100vh;
+  }
+  .button {
+    width: 40vw;
+  }
+}
+@keyframes titleIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  70% {
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
