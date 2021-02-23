@@ -11,7 +11,7 @@ Here's a [live demo](react-ecommerce-d720b.web.app/)
         <img src="https://res.cloudinary.com/sam13/image/upload/v1614069448/img1_oas9zh.png"></img>
   </kbd>
    <kbd>
-        <img src="https://res.cloudinary.com/sam13/image/upload/v1614069448/img2_w1mosc.pngg"></img>
+        <img src="https://res.cloudinary.com/sam13/image/upload/v1614069448/img2_w1mosc.png"></img>
   </kbd>
    <kbd>
         <img src="https://res.cloudinary.com/sam13/image/upload/v1614069447/img3_z3afb2.png"></img>
